@@ -6,7 +6,7 @@ module.exports = {
       summary: `Ceci n'est pas un blog`,
     },
     description: `Ready for a spiritual transmission`,
-    // siteUrl: `www.example.com`,
+    siteUrl: `https://hardcore-goodall-87c647.netlify.app/`,
     social: {
       twitter: `hackerman2049`,
     },
