@@ -3,7 +3,7 @@ import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 import { Container, Row, Col } from 'react-bootstrap'
 
-// import LandingTitle
+import Header from '../components/header/header'
 // import LandingColorbars
 // import HeaderBio
 // import Nav
@@ -11,12 +11,12 @@ console.log(location)
 
 let path = location.pathname
 
-function Hello(){
+function HomePage(){
     return (
-        <Container>
-          <h1 className='text-center'>Jeremy DeCarvalho</h1>
+        <Container className='text-center'>
+            <Header></Header>
         </Container>
       )
   }
 
-export default Hello
+export default HomePage
