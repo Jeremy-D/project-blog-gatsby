@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Jeremy DeCarvalho`,
+    title: `Ceci n'est pas un blog`,
     author: {
       name: `Jeremy DeCarvalho`,
-      summary: `Ceci n'est pas un blog`,
+      summary: `Currently seeking parallel universe mole people in the antarctic`,
     },
     description: `Ready for a spiritual transmission`,
     siteUrl: `https://hardcore-goodall-87c647.netlify.app/`,
