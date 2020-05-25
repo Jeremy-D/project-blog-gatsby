@@ -1,6 +1,7 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
+import { Container, Row, Col } from 'react-bootstrap'
 
 // import LandingTitle
 // import LandingColorbars
@@ -12,10 +13,9 @@ let path = location.pathname
 
 function Hello(){
     return (
-      <div>
-        <p>{path}</p>
-        <h1>Hello</h1>
-      </div>
+        <Container>
+          <h1 className='text-center'>Jeremy DeCarvalho</h1>
+        </Container>
       )
   }
 
