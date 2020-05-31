@@ -39,14 +39,15 @@ const Header = () => {
   };
 
   return (
-    <div className='text-center'>
-      <Row className='justify-content-md-center'>
+    // <Col> tag used as wrapper so that we can use nested rows with bootstrap
+    <Col className='text-center'>
+      <Row className='justify-content-center'>
       <Col xs={12} sm={12} md={12} className='text-center'>
           <h1>{author.name}</h1>
       </Col>
       </Row>
 
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
           <Col xs={12} sm={12} md={12} className='text-center'>
               <Image
                   fixed={data.avatar.childImageSharp.fixed}
@@ -56,9 +57,9 @@ const Header = () => {
           </Col>
       </Row>
 
-      <Row className='justify-content-md-center'>
+      <Row className='justify-content-center'>
         <Col >
-          <Nav variant="pills" defaultActiveKey="/home" className='justify-content-md-center'>
+          <Nav variant="pills" defaultActiveKey="/home" className='justify-content-center'>
             <Nav.Item>
                 <Nav.Link style={noBoxShadow}  href="/home">Home</Nav.Link>
             </Nav.Item>
@@ -74,7 +75,7 @@ const Header = () => {
             </Nav>
         </Col>
       </Row>
-    </div>
+    </Col>
     )
 
 }

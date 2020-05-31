@@ -1,6 +1,7 @@
 ## Notes:
 
 1.  **A word on  React-Bootstrap components**
+  
   Since we are using React bootstrap components we rely sometimes on nested row/col in our components. 
 
   See the bootstrap grid documentation for more examples
