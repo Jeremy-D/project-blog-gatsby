@@ -41,11 +41,13 @@ const Header = () => {
   return (
     <div className='text-center'>
       <Row className='justify-content-md-center'>
+      <Col xs={12} sm={12} md={12} className='text-center'>
           <h1>{author.name}</h1>
+      </Col>
       </Row>
 
       <Row className="justify-content-md-center">
-          <Col xs={12} sm={4} md={4} className='text-center'>
+          <Col xs={12} sm={12} md={12} className='text-center'>
               <Image
                   fixed={data.avatar.childImageSharp.fixed}
                   alt={author.name}
@@ -55,20 +57,22 @@ const Header = () => {
       </Row>
 
       <Row className='justify-content-md-center'>
-        <Nav variant="pills" defaultActiveKey="/home">
-          <Nav.Item>
-              <Nav.Link style={noBoxShadow}  href="/home">Home</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-              <Nav.Link style={noBoxShadow} href="/projects">Projects</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-              <Nav.Link style={noBoxShadow} href="/blog">Blog</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-              <Nav.Link style={noBoxShadow} href="/github">Github</Nav.Link>
-          </Nav.Item>
-          </Nav>
+        <Col >
+          <Nav variant="pills" defaultActiveKey="/home" className='justify-content-md-center'>
+            <Nav.Item>
+                <Nav.Link style={noBoxShadow}  href="/home">Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link style={noBoxShadow} href="/projects">Projects</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link style={noBoxShadow} href="/blog">Blog</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link style={noBoxShadow} href="/github">Github</Nav.Link>
+            </Nav.Item>
+            </Nav>
+        </Col>
       </Row>
     </div>
     )

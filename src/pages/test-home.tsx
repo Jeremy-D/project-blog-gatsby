@@ -15,6 +15,9 @@ function HomePage(){
     return (
         <Container className='text-center'>
             <Header></Header>
+            {/* title component */}
+            {/* subtitle component w/ nonsense generator */}
+            {/* color bars */}
         </Container>
       )
   }
