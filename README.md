@@ -1,3 +1,43 @@
+## Notes:
+
+1.  **A word on  React-Bootstrap components**
+  Since we are using React bootstrap components we rely sometimes on nested row/col in our components. 
+
+  See the bootstrap grid documentation for more examples
+
+  ```
+  <div class="row">
+    <div class="col-sm-9">
+      Level 1: .col-sm-9
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          Level 2: .col-8 .col-sm-6
+        </div>
+        <div class="col-4 col-sm-6">
+          Level 2: .col-4 .col-sm-6
+        </div>
+      </div>
+    </div>
+  </div>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
