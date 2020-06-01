@@ -1,9 +1,16 @@
 import React from 'react'
 
 const ColorBar = props => {
+    let barStyle = {
+        backgroundColor: props.backgroundColor,
+        height:'1rem',
+        margin: '.25rem'
+    }
+    
     return (
-        <div>
-            im a color bar
+        <div      
+         style={barStyle}>
+             {/* text placeholder */}
         </div>
     )
 }

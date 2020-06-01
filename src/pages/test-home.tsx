@@ -12,14 +12,38 @@ console.log(location)
 
 let path = location.pathname
 
+
+
 function HomePage(){
+    let containerStyle = {
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around'
+    }
+
     return (
-        <Container className='text-center'>
-            <Header></Header>
-            <Title></Title>
-            {/* title component */}
-            {/* subtitle component w/ nonsense generator */}
-            {/* color bars */}
+        <Container 
+            className='text-center align-items-center'
+            style={containerStyle}
+            >
+            {/* 
+            IMPORTANT: Nested rows must be inside of columns
+            all components inside of a <Row> tag are wrapped 
+            in a <Col> tag
+            */}
+            <Row>
+                <Header></Header> 
+            </Row>
+
+            <Row className='align-middle'>
+                <Title></Title>
+            </Row>
+
+            {/* SPACING DIVS TO WORK WITH FLEXBOX */}
+            <div></div>
+            <div></div>
+            
         </Container>
       )
   }
