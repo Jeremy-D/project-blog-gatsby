@@ -30,14 +30,13 @@ const Title = () => {
   
 
   let titleStyle = {
-      
+
   }
 
   return (
     // <Col> tag used as wrapper so that we can use nested rows with bootstrap
     <Col 
-    className='text-center justify-content-center'
-    >
+    className='text-center justify-content-center'>
         <Row className='justify-content-center'>
             <h2>{title}</h2>
         </Row>

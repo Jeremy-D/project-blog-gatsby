@@ -7,6 +7,7 @@ import Header from '../components/header/header'
 import Title from '../components/header/title'
 
 
+
 function HomePage(){
     let containerStyle = {
         height: '100vh',
@@ -28,6 +29,7 @@ function HomePage(){
             <Row>
                 <Header></Header> 
             </Row>
+
 
             <Row className='align-middle'>
                 <Title></Title>

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import { Row, Col, Nav } from 'react-bootstrap'
+import { Row, Col, Nav, Card, Button } from 'react-bootstrap'
 
 
 const Header = () => {
@@ -87,6 +87,7 @@ const Header = () => {
         </Col>
       </Row>
 
+
       {/* ICON */}
       <Row className="justify-content-center">
           <Col className='text-center'>
@@ -101,9 +102,9 @@ const Header = () => {
       {/* NAV */}
       <Row className='justify-content-center'>
         <Col >
-          <Nav variant="pills" defaultActiveKey="/home" className='justify-content-center'>
+          <Nav variant="pills" defaultActiveKey="/" className='justify-content-center'>
             <Nav.Item className=''>
-                <Nav.Link style={navLinkStyle}  href="/home">Home</Nav.Link>
+                <Nav.Link style={navLinkStyle}  href="/">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item className=''>
                 <Nav.Link style={navLinkStyle} href="/projects">Projects</Nav.Link>

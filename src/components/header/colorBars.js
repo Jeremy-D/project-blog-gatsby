@@ -12,10 +12,13 @@ import ColorBar from './colorBar'
 
 
 
+const colorBarStyle = {
+    margin: '15px'
+  }
 
 const ColorBars = props => {
     return (
-        <Row className='justify-content-center' >
+        <Row className='justify-content-center' style={colorBarStyle}>
             <Col className='justify-content-center'>
                 <Row>
                     <Col xs={3}></Col>
