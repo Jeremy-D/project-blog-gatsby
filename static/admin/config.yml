@@ -15,7 +15,16 @@ collections:
     editor:
      preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: "Categories", name: "categories", widget: "string", required: true }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Header Image", name: "image", widget: "image", required: false } #add default image
+      - { label: "Commenting", name: "comments", widget: "boolean", default: false } 
+      - { label: "Sharing", name: "share", widget: "boolean", default: false } 
+      - { label: "Type", name: "type", widget: "hidden", default: "post" } 
+      
+      
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
