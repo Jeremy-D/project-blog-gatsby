@@ -7,7 +7,20 @@ import Header from '../components/header/header'
 // import Title from '../components/header/title'
 import ColorBars from '../components/header/colorBars'
 
+const mainStyles = {
+  display: 'flex', 
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  alignContent: 'space-around',
+  // backgroundColor: `purple`
+  }
 
+const bodyContainerStyles = {
+  marginLeft: `auto`,
+  marginRight: `auto`,
+  maxWidth: `60rem`,
+  padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+}
 
 
 const Layout = ({ location, title, children }) => {
@@ -30,16 +43,11 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
+    <div style={bodyContainerStyles}>
       <div>{header}</div>
-      <main>{children}</main>
+      <main 
+        style={mainStyles}
+        >{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

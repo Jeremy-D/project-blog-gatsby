@@ -106,14 +106,14 @@ const Header = () => {
             <Nav.Item className=''>
                 <Nav.Link style={navLinkStyle}  href="/">Home</Nav.Link>
             </Nav.Item>
-            <Nav.Item className=''>
+            {/* <Nav.Item className=''>
                 <Nav.Link style={navLinkStyle} href="/projects">Projects</Nav.Link>
             </Nav.Item>
             <Nav.Item className=''>
                 <Nav.Link style={navLinkStyle} href="/blog">Blog</Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
             <Nav.Item className=''>
-                <Nav.Link style={navLinkStyle} href="/github">Github</Nav.Link>
+                <Nav.Link style={navLinkStyle} href="https://github.com/Jeremy-D">Github</Nav.Link>
             </Nav.Item>
             </Nav>
         </Col>

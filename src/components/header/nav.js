@@ -7,14 +7,14 @@ const Nav = () => {
                     <Nav.Item>
                         <Nav.Link href="/home">Home</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
+                    {/* <Nav.Item>
                         <Nav.Link href="/projects">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="/blog">Blog</Nav.Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                     <Nav.Item>
-                        <Nav.Link href="/github">Github</Nav.Link>
+                        <Nav.Link href="https://github.com/Jeremy-D">Github</Nav.Link>
                     </Nav.Item>
                 </Nav>
     )
